@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Teacher Student Work Module</title>
+  <div th:replace="fragments/header :: header-css" ></div> 
+ </head>
+<body>
+
+<!-- <div th:replace="fragments/header :: header"></div>
+ -->
+<div class="container">
+
+    <div  align="center">
+    <h3>[[${message}]]</h3><div>&nbsp;</div>
+    <table> 
+        <tr><td colspan="2" align="center" ><h1> -- Menu -- </h1> </td></tr>
+        <tr><td>1.</td><td><a th:href="@{/performance(teacherName='try_try@8.gmail.com')}">Answer per month</a></td></tr>
+      </table>
+    </div>
+
+</div>
+<!-- /.container -->
+<div>&nbsp;</div>
+<div th:replace="fragments/footer :: footer"></div>
+
+</body>
+</html>
